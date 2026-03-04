@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#0F2346">
+  <title>Central Aviation | Professional Flight Training</title>
+
+  <meta name="description"
+        content="Central Aviation provides structured, professional flight training and recurrent instruction based in Sterling, Virginia." />
+  <meta name="keywords"
+        content="flight training Sterling VA, CFI Northern Virginia, instrument training, recurrent flight training" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#1E3A8A',
+          secondary: '#0F2346',
+          gold: '#C8A44D'
+        }
+      }
+    }
+  }
+</script>
+
+<style type="text/tailwindcss">
+@layer components {
+
+  .container {
+    @apply max-w-6xl mx-auto px-6;
+  }
+
+  .section {
+    @apply py-20;
+  }
+
+  .section-light {
+    @apply bg-slate-50;
+  }
+
+  .section-white {
+    @apply bg-white;
+  }
+
+  .heading-primary {
+    @apply text-4xl md:text-5xl font-semibold tracking-tight text-secondary;
+  }
+
+  .heading-secondary {
+    @apply text-2xl md:text-3xl font-semibold text-secondary;
+  }
+
+  .body-text {
+    @apply text-base text-slate-600 leading-relaxed;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-slate-700 hover:text-primary transition;
+  }
+
+  .card {
+    @apply bg-white border border-slate-200 rounded-lg p-6 shadow-sm;
+  }
+
+  .card-title {
+    @apply text-lg font-semibold text-secondary mb-2;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-md
+           font-medium tracking-wide
+           hover:bg-secondary transition;
+  }
+
+  .form-input {
+    @apply w-full border border-slate-300 rounded-md
+           px-4 py-2 text-slate-700
+           focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+
+  .accent-line {
+    @apply h-px w-16 bg-gold my-4;
+  }
+
+  .footer {
+    @apply bg-secondary text-slate-300 text-sm py-6 text-center;
+  }
+
+  .nav-link {
+    @apply py-2;
+  }
+
+  img {
+    transition: filter 0.3s ease;
+  }
+  img:hover {
+    filter: grayscale(10%);
+  }
+}
+</style>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FlightSchool",
+    "name": "Central Aviation",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sterling",
+      "addressRegion": "VA",
+      "addressCountry": "US"
+    },
+    "areaServed": "Mid-Atlantic",
+    "description": "Professional flight training with a structured, safety-focused approach."
+  }
+  </script>
+</head>
+
+<body class="bg-white text-slate-700">
+
+<!-- HEADER / NAV -->
+<header class="sticky top-0 z-50 bg-white border-b border-slate-200">
+  <div class="container flex justify-between items-center py-5">
+
+    <!-- Logo -->
+    <a href="#" class="flex items-center">
+      <img 
+        src="Logo.png" 
+        alt="Central Aviation logo"
+        class="h-14 md:h-16 w-auto"
+      />
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center space-x-8">
+      <a href="#training" class="nav-link">Training</a>
+      <a href="#why" class="nav-link">Why Us</a>
+      <a href="#expect" class="nav-link">What to Expect</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a 
+        href="https://www.spreadshop.com/"
+        class="nav-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Community Gear
+      </a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button 
+      id="menu-toggle"
+      class="md:hidden flex items-center justify-center w-10 h-10 rounded-md border border-slate-300 text-slate-700 hover:bg-slate-100"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+      <!-- Hamburger Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+  </div>
+
+  <!-- Mobile Navigation Panel -->
+  <nav 
+    id="mobile-menu"
+    class="md:hidden hidden border-t border-slate-200 bg-white"
+  >
+    <div class="container py-4 flex flex-col space-y-4">
+      <a href="#training" class="nav-link">Training</a>
+      <a href="#why" class="nav-link">Why Us</a>
+      <a href="#expect" class="nav-link">What to Expect</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a 
+      href="https://www.spreadshop.com/"
+      class="nav-link"
+      target="_blank"
+      rel="noopener noreferrer"
+      >
+        Community Gear
+      </a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="section section-white">
+  <div class="container text-center max-w-4xl">
+    <h1 class="heading-primary mb-6">
+      Professional Flight Training,<br class="hidden md:block">
+      Built for Long-Term Aviation Careers
+    </h1>
+
+    <div class="accent-line mx-auto"></div>
+
+    <p class="body-text max-w-2xl mx-auto">
+      Structured, safety-focused instruction for pilots who value professionalism,
+      clarity, and consistent standards.
+    </p>
+  </div>
+</section>
+
+<!-- WHY TRAIN WITH US -->
+<section id="why" class="section section-light">
+  <div class="container grid md:grid-cols-3 gap-8">
+    <div class="card">
+      <h3 class="card-title">Structured Training</h3>
+      <p class="body-text">
+        Clear syllabi, defined milestones, and documented progress from day one.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Instructor Credibility</h3>
+      <p class="body-text">
+        CFI, CFII, MEI with experience operating inside regulated safety environments.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Career-Oriented</h3>
+      <p class="body-text">
+        Training designed to support airline, corporate, ownership, and recurrent needs.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINING PATHWAYS -->
+<section id="training" class="section section-white">
+  <div class="container">
+    <h2 class="heading-secondary mb-8">
+      Training Pathways
+    </h2>
+
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="card">
+        <h3 class="card-title">Private Pilot</h3>
+        <p class="body-text">Fundamentals, discipline, and sound decision-making.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Instrument Rating</h3>
+        <p class="body-text">Procedural IFR skills and real-world workload management.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Commercial Pilot</h3>
+        <p class="body-text">Precision, professionalism, and consistent aircraft control.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Recurrent & Currency</h3>
+        <p class="body-text">Structured proficiency training for active pilots and owners.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- Aircraft Image -->
+    <div>
+      <img 
+        src="pa28.png"
+        alt="Piper PA-28 training aircraft"
+        class="w-full rounded-lg border border-slate-200 shadow-sm"
+      />
+    </div>
+
+    <!-- Aircraft Copy -->
+    <div>
+      <h2 class="heading-secondary mb-4">
+        Training Aircraft
+      </h2>
+
+      <p class="body-text mb-4">
+        Training is conducted in a well-maintained Piper PA-28 platform,
+        selected for its predictable handling characteristics, instructional
+        suitability, and strong safety record.
+      </p>
+
+      <p class="body-text">
+        Aircraft maintenance, documentation, and operating practices are managed
+        with a long-term ownership mindset and a focus on reliability and consistency.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHAT TO EXPECT -->
+<section id="expect" class="section section-white">
+  <div class="container max-w-4xl">
+    <h2 class="heading-secondary mb-6">
+      What to Expect as a Student
+    </h2>
+
+    <ul class="list-disc list-inside space-y-3 body-text">
+      <li>Structured lesson plans aligned with FAA ACS standards</li>
+      <li>Professional scheduling and clear expectations</li>
+      <li>Emphasis on aeronautical decision-making and risk management</li>
+      <li>Training records maintained to professional and insurance standards</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container grid md:grid-cols-3 gap-10 items-center">
+
+    <!-- Profile Image -->
+    <div class="md:col-span-1 flex justify-center">
+      <img 
+        src="profileimage.png"
+        alt="Principal Flight Instructor – Central Aviation"
+        class="w-48 h-48 object-cover rounded-lg border border-slate-200 shadow-sm"
+      />
+    </div>
+
+    <!-- Profile Copy -->
+    <div class="md:col-span-2">
+      <h2 class="heading-secondary mb-4">
+        Principal Instructor & Operator
+      </h2>
+
+      <p class="body-text mb-4">
+        Central Aviation is led by a certificated flight instructor with
+        experience operating in highly regulated environments where safety,
+        documentation, and procedural discipline are essential.
+      </p>
+
+      <p class="body-text">
+        Instruction emphasizes structured training, sound aeronautical decision-making,
+        and professional operating standards appropriate for long-term aviation careers.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="section section-white">
+  <div class="container grid md:grid-cols-2 gap-12">
+    <div>
+      <h2 class="heading-secondary mb-4">
+        Pilot & Instructor Credentials
+      </h2>
+      <ul class="space-y-2 body-text">
+        <li>Certified Flight Instructor (CFI, CFII, MEI)</li>
+        <li>Structured syllabi and standardized instruction</li>
+        <li>Risk-aware, compliance-driven operating philosophy</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="heading-secondary mb-4">
+        Professional Background
+      </h2>
+      <p class="body-text">
+        Experience in regulatory oversight within highly controlled industries,
+        emphasizing risk management, documentation, and operational integrity.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- STUDENT INTAKE -->
+<section id="contact" class="section section-light">
+  <div class="container max-w-xl">
+    <h2 class="heading-secondary mb-6">
+      Student Intake Form
+    </h2>
+
+    <form id="studentIntakeForm" class="space-y-4">
+
+    <input id="firstName" class="form-input" type="text" placeholder="First Name" required>
+    <input id="lastName" class="form-input" type="text" placeholder="Last Name" required>
+    <input id="email" class="form-input" type="email" placeholder="Email Address" required>
+    <input id="phone" class="form-input" type="tel" placeholder="Phone Number">
+    <input id="hours" class="form-input" type="number" placeholder="Total Flight Hours">
+
+    <textarea id="goals" class="form-input" rows="4" placeholder="Training Goals"></textarea>
+
+    <label class="flex items-start space-x-2 text-sm text-slate-600">
+        <input id="confirm" type="checkbox" required class="mt-1">
+        <span>I confirm the information provided is accurate.</span>
+    </label>
+
+    <button class="btn-primary w-full" type="submit">
+        Submit Intake Form
+    </button>
+
+    </form>
+
+    <div
+        id="formSuccess"
+        class="hidden mt-8 rounded-xl border border-emerald-200 bg-emerald-50 p-6 text-emerald-800"
+        >
+        <h3 class="text-lg font-semibold mb-2">
+            Intake Submitted Successfully
+        </h3>
+        <p class="text-sm leading-relaxed">
+            Thank you for your interest in training with Central Aviation.
+            Your intake information has been prepared for delivery.
+        </p>
+        <p class="text-sm mt-2">
+            If your email client did not open automatically, please contact us directly.
+        </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  Central Aviation • Sterling, VA • Aircraft Hangared at Eastern WV Regional Airport
+</footer>
+
+<script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleButton.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('hidden');
+    toggleButton.setAttribute(
+      'aria-expanded',
+      (!isOpen).toString()
+    );
+  });
+
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      toggleButton.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+<script>
+  document.getElementById('studentIntakeForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const form = this;
+
+    const firstName = document.getElementById('firstName').value;
+    const lastName  = document.getElementById('lastName').value;
+    const email     = document.getElementById('email').value;
+    const phone     = document.getElementById('phone').value || 'Not provided';
+    const hours     = document.getElementById('hours').value || 'Not provided';
+    const goals     = document.getElementById('goals').value || 'Not provided';
+
+    const subject = encodeURIComponent(
+      `New Student Intake – ${firstName} ${lastName}`
+    );
+
+    const body = encodeURIComponent(
+      `New Student Intake Submission\n\n` +
+      `Name: ${firstName} ${lastName}\n` +
+      `Email: ${email}\n` +
+      `Phone: ${phone}\n` +
+      `Total Flight Hours: ${hours}\n\n` +
+      `Training Goals:\n${goals}\n\n` +
+      `Submitted via Central Aviation website`
+    );
+
+    // Trigger email client
+    window.location.href =
+      `mailto:aconway01@gmail.com?subject=${subject}&body=${body}`;
+
+    // Success state UI
+    form.classList.add('hidden');
+    document.getElementById('formSuccess').classList.remove('hidden');
+  });
+</script>
+
+</body>
+</html>
