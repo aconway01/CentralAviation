@@ -249,7 +249,13 @@
       Training Pathways
     </h2>
 
-    <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-6">
+    <div class="grid lg:grid-cols-5 sm:grid-cols-2 gap-6">
+
+      <div class="card border-gold">
+        <h3 class="card-title">Discovery Flight</h3>
+        <p class="body-text">Your first hour in the cockpit. Includes a ground briefing and hands-on flight time — $200.</p>
+      </div>
+
       <div class="card">
         <h3 class="card-title">Private Pilot</h3>
         <p class="body-text">Fundamentals, discipline, and sound decision-making.</p>
@@ -274,6 +280,23 @@
 </section>
 
 <section class="section section-light">
+  <div class="container max-w-3xl">
+    <h2 class="heading-secondary mb-4">Discovery Flights</h2>
+    <div class="accent-line"></div>
+    <p class="body-text mb-4">
+      Not sure if flying is right for you? A discovery flight is the best way to find out.
+      You'll start with a structured ground briefing covering the basics of flight, the aircraft,
+      and what to expect in the air — then take the controls yourself on a one-hour introductory flight.
+    </p>
+    <p class="body-text mb-6">
+      Discovery flights are conducted in the Piper PA-28 and are open to anyone with no prior
+      experience required. The $200 flat rate covers the full hour including ground time.
+    </p>
+    <a href="#contact" class="btn-primary inline-block">Book a Discovery Flight</a>
+  </div>
+</section>
+
+<section class="section section-white">
   <div class="container max-w-3xl">
 
     <h2 class="heading-secondary mb-4">
@@ -322,7 +345,7 @@
   </div>
 </section>
 
-<section class="section section-white">
+<section class="section section-light">
   <div class="container grid md:grid-cols-2 gap-12 items-center">
 
     <!-- Aircraft Image -->
@@ -356,7 +379,7 @@
 </section>
 
 <!-- WHAT TO EXPECT -->
-<section id="expect" class="section section-light">
+<section id="expect" class="section section-white">
   <div class="container max-w-4xl">
     <h2 class="heading-secondary mb-6">
       What to Expect as a Student
@@ -372,7 +395,7 @@
 </section>
 
 <!-- Location -->
-<section id="location" class="section section-white">
+<section id="location" class="section section-light">
   <div class="container max-w-4xl">
     <h2 class="heading-secondary mb-6">
       Training Location
@@ -386,7 +409,7 @@
   </div>
 </section>
 
-<section class="section section-light">
+<section class="section section-white">
   <div class="container grid md:grid-cols-3 gap-10 items-center">
 
     <!-- Profile Image -->
@@ -417,7 +440,7 @@
   </div>
 </section>
 
-<section class="section section-white">
+<section class="section section-light">
   <div class="container max-w-3xl">
 
     <h2 class="heading-secondary mb-4">
@@ -431,8 +454,8 @@
 
     <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-700">
       <div>
-        <h3 class="font-semibold mb-2">A good fit if you:</h3>
-        <ul class="space-y-1">
+        <h3 class="font-semibold body-text mb-2">A good fit if you:</h3>
+        <ul class="list-disc list-inside space-y-1 body-text">
           <li>Want disciplined, syllabus-based instruction</li>
           <li>Can train consistently</li>
           <li>Value safety and preparation over shortcuts</li>
@@ -441,8 +464,8 @@
       </div>
 
       <div>
-        <h3 class="font-semibold mb-2">May not be a fit if you:</h3>
-        <ul class="space-y-1">
+        <h3 class="font-semibold body-text mb-2">May not be a fit if you:</h3>
+        <ul class="list-disc list-inside space-y-1 body-text">
           <li>Are seeking the lowest possible hourly rate</li>
           <li>Prefer informal or unstructured instruction</li>
           <li>Can only train sporadically</li>
@@ -454,7 +477,7 @@
 </section>
 
 <!-- STUDENT INTAKE -->
-<section id="contact" class="section section-light">
+<section id="contact" class="section section-white">
   <div class="container max-w-3xl">
 
     <h2 class="heading-secondary mb-4">Request Training Information</h2>
@@ -495,6 +518,7 @@
         <label class="form-label">Training Goal</label>
         <select name="track" required class="form-input">
           <option value="">Select one</option>
+          <option value="Discovery Flight">Discovery Flight — $200</option>
           <option value="Recreational Private Pilot">Private Pilot (Recreational)</option>
           <option value="Instrument Rating">Instrument Rating</option>
           <option value="Commercial / Career Track">Commercial / Career Track</option>
